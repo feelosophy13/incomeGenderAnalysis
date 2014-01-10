@@ -7,7 +7,7 @@ While I didn't personally think that women had "inferior negotiation skills" tha
 
 <h2>Methods</h2>
 <h3>Tool</h3>
-This analysis was performed using the <a href='http://www.R-project.org target='_blank'>R programming language</a>.
+This analysis was performed using the <a href='http://www.R-project.org' target='_blank'>R programming language</a>.
 
 <h3>About the Data</h3>
 The <strong>AdultUCI</strong> dataset in <strong>arules</strong> package in R contains information about individuals' information from census data. Information about individuals include age, education, marital status, occupation, relationship, race, sex, work hours per week, native country, income, etc. Income is classified as either 'small' (less than $50K/year salary) or 'large' (greater than or equal to $50K/year).
@@ -50,11 +50,11 @@ Below R code was used to load the pre-processed <strong>AdultUCI</strong> data a
 <strong>Note:</strong> "Men and women" from here and on refer to individuals who have never married.
 
 <h3>Sample sizes</h3>
-After subsetting for individuals who have never married, there were more men (5414) than women (4312) in the dataset. 
+After subsetting for individuals who have never married, there were more men (5414) than women (4312) in the dataset.<br />
 ![Alt text](./images/individuals_who_never_married_by_income_and_gender.png)<br />
 
 <h3>Age difference between genders</h3>
-There didn't appear to be any significant age difference between men and women in the dataset, both in means and in medians. 
+There didn't appear to be any significant age difference between men and women in the dataset.
 
 Average age of men who never married: 28.4<br />
 Average age of women who never married: 28.5<br />
@@ -64,10 +64,10 @@ Median age of women who never married: 25<br />
 ![Alt text](./images/histogram_of_male_and_female_individuals_age.png)<br />
 ![Alt text](./images/histograms_of_age_of_males_and_females_who_never_married.png)<br />
 
-Mann-Whitney U test (a non-parametric means comparison test) was performed to see if the means age difference between men and women was significant. The test rendered a p-value of 0.162 (greater than 0.05), which allowed me to retain the null hypothesis and conclude that there exists no statistically significant difference in average age between men and women.
+Mann-Whitney U test (a non-parametric median comparison test) was performed to see if the median age difference between men and women was significant. The test rendered a p-value of 0.162 (greater than 0.05), which allowed me to retain the null hypothesis and conclude that there exists no statistically significant difference in average age between men and women.
 
 <h3>Work hours per week by gender</h3>
-There appeared to be some noteable difference in the average number of work hours per week between men and women.
+There appeared to be some noteable difference in the number of work hours per week between men and women.
 
 Average work hours per week for men who have never married: 38.7<br />
 Average work hours per week for women who have never married: 35.3<br />
@@ -76,7 +76,7 @@ Median work hours per week for women who have never married: 40<br />
 
 ![Alt text](./images/work_hours_per_week_by_gender_of_individuals_who_never_married.png)<br />
 
-Mann-Whitney U test (a non-parametric means comparison test) was performed to see if the difference between men and women's work hours per week was statistically significant. The test rendered a p-value less than 2.2e-16 (much, much less than 0.05), which allowed me to conclude that there exists a statistically significant difference in the average number of work hours per week between men and women and that men on average work longer hours than women.
+Mann-Whitney U test (a non-parametric median comparison test) was performed to see if the difference between men and women's work hours per week was statistically significant. The test rendered a p-value less than 2.2e-16 (much, much less than 0.05), which allowed me to conclude that there exists a statistically significant difference in the number of work hours per week between men and women (that men tend to work longer hours than women).
 
 <h3>Education by gender</h3>
 There appeared to be some noteable difference in the average number in school between men and women.
@@ -86,7 +86,7 @@ Average number of years in school for women who have never married: 10.3<br />
 Median number of years in school for men who have never married: 10<br />
 Median number of years in school for women who have never married: 10<br />
 
-Mann-Whitney U test (a non-parametric means comparison test) was performed to see if the difference between men and women's number of years in school was statistically significant. The test rendered a p-value less than 2.2e-16 (much, much less than 0.05), which allowed me to conclude that there exists a statistically significant difference in the average number of years in school between men and women (and that women on average stay longer in school).
+Mann-Whitney U test (a non-parametric median comparison test) was performed to see if the difference between men and women's number of years in school was statistically significant. The test rendered a p-value less than 2.2e-16 (much, much less than 0.05), which allowed me to conclude that there exists a statistically significant difference in the number of years in school between men and women (and that women tend to stay longer in school).
 
 <h3>Occupation by gender</h3>
 ![Alt text](./images/individuals_who_never_married_by_occupation_type_and_gender.png)<br />
